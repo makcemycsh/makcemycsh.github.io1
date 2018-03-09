@@ -744,7 +744,12 @@ header .aplication-btn:before {
     line-height: 1.5;
     font-size: 0.9em
 }
-
+.comments{
+    background: url(../img/comments-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 10em
+}
 .algo{
     background: var(--light-color);
     padding: 2.5em 0;
