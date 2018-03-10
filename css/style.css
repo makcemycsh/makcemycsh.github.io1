@@ -1338,7 +1338,7 @@ footer .f-btn:after {
         margin-bottom: 2.5em;
     }
     .why .causes .item {
-        width: 80%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1367,6 +1367,9 @@ footer .f-btn:after {
     .main-row .head-contacts {
         margin-top: 0.5em;
         margin-left: 3em;
+ 
+        width: 100%;
+    
     }
     header .main-h {
         font-size: 2em;
@@ -1394,7 +1397,10 @@ footer .f-btn:after {
     .know .bg-img {
         width: 70%
     }
-
+    .why{
+        width: 100%;
+        padding: 2.5em 0;
+    }
     .know .wrap-text {
         margin-right: 2.5em;
         width: 40%;
