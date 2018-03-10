@@ -12,7 +12,6 @@ body {
     color: var(--grey-color);
     letter-spacing: 0.01em;
     cursor: default;
-    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -39,7 +38,6 @@ section {
 .container {
     max-width: 1200px;
     width: 80%;
-    min-width: 800px;
     margin: 0 auto;
 }
 
@@ -297,16 +295,11 @@ header .circles-about .item p {
     text-align: center;
     color: var(--light-color);
     margin: 1em auto;
-    width: 46%;
+    width: 100%;
     font-family: 'Roboto-Light', sans-serif;
     letter-spacing: 0.03em;
     line-height: 1.4;
 }
-
-header .circles-about .item:nth-child(1) p {
-    width: 20%;
-}
-
 
 header .aplication-btn {
     font-family: 'Rubik-Light', sans-serif;
@@ -391,7 +384,7 @@ header .aplication-btn:before {
     background-color: var(--light-color);
     box-shadow: 0px 20px 150px 20px rgba(0, 0, 0, 0.2);
     position: relative;
-    min-width: 1000px;
+/*    min-width: 1000px;*/
 }
 
 .why:after {
@@ -846,7 +839,7 @@ header .aplication-btn:before {
 .algo .wrap-items{
     max-width: 1200px;
     width: 80%;
-    min-width: 800px;
+/*    min-width: 800px;*/
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -1104,4 +1097,29 @@ footer .f-btn:after{
     background: red;
     left:50%;
     top:50%;
+}
+@media (max-width: 1200px) {
+    *{
+        font-size: 14px;
+    }
+    
+    .main-menu {
+    flex-wrap: wrap;
+}
+    .why .causes {
+        justify-content: space-between;
+    }
+    .why .causes .item {
+        width: 25%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    *{
+        font-size: 12px;
+    }
+    .why .causes .item {
+        width: 40%;
+    }
 }
