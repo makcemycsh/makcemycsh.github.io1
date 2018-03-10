@@ -748,8 +748,97 @@ header .aplication-btn:before {
     background: url(../img/comments-bg.jpg);
     background-position: center;
     background-size: cover;
-    height: 10em
+    padding: 2.5em 0;
+    position: relative;;
 }
+.comments .wrap-text h2,
+.comments .wrap-text p{
+    color: #fff;
+    text-align: center;
+}
+.comments .wrap-text p{
+    line-height: 1.4;
+        font-family: 'Roboto-Light', sans-serif;
+        letter-spacing: 0.03em;
+}
+.comments .wrap-text .ico{
+    width: 8em;
+    height: 8em;
+    margin: 2em auto;
+    border-radius: 4em;
+    background: transparent;
+    border: 2px solid #fff;
+
+
+}
+
+.comments .wrap-text{
+    width: 35%;
+    margin-left: 0; 
+}
+
+
+
+.principle h3{
+        font-family: 'Rubik-Bold', sans-serif;
+    letter-spacing: 0.01em;
+    color: var(--theme-color);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.principle h3:after{
+    content:'\201E';
+    position:absolute;
+     font-family: sans-serif;
+    bottom: -0.6em;
+    left: 0;
+        font-size: 1.7em;
+    font-weight: 800;
+
+}
+
+
+.principle p{
+    margin-bottom: 1em;
+        line-height: 1.4;
+        font-family: 'Roboto-Light', sans-serif;
+        letter-spacing: 0.03em;
+}
+.principle .wrap-items{
+    margin-top: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.principle .wrap-items .item{
+    width: 35%;
+    margin-bottom: 2em;
+    padding-right: 7%;
+}
+
+.principle .wrap-contact{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.principle .wrap-contact .foto{
+    height: 7em;
+    width: 7em;
+    border-radius: 4em;
+    background:grey;
+}
+
+
+
+
 .algo{
     background: var(--light-color);
     padding: 2.5em 0;
