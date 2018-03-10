@@ -6,12 +6,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+        
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
 </head>
 
 <body>
+
+    <!--   HEAD-->
     <div class="main-row">
         <div class="container">
             <h2>ДАГЕСТАНСКИЙ КАМЕНЬ</h2>
@@ -31,7 +41,7 @@
                 <li><a href="">Покупка камня</a></li>
                 <li><a href="">Услуги облицовки</a></li>
                 <li><a href="">Как мы работаем</a></li>
-              <li><a href="">Наши работы</a></li>
+                <li><a href="">Наши работы</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
             <h1 class="main-h">Продажа дагестанского камня<br>и услуги облицовки по всей россии<br>с гарантией 10 лет</h1>
@@ -54,6 +64,8 @@
             </div>
         </div>
     </header>
+    <!--   HEAD-->
+    <!--    Почему стоит выбрать-->
     <section class="container why">
         <h2>Почему стоит выбрать<br><span>дагестанский камень</span></h2>
         <div class="causes">
@@ -99,6 +111,8 @@
             </div>
         </div>
     </section>
+    <!--    Почему стоит выбрать-->
+    <!--    Контактные формы-->
     <div class="popup-wrap">
         <div class="popup-content">
             <div class="closeBtn"></div>
@@ -106,6 +120,8 @@
             </form>
         </div>
     </div>
+    <!--    Контактные формы-->
+    <!--    А вам знакомо?-->
     <section class="container know">
         <h2>А вам это <span>знакомо?</span></h2>
         <div class="bg-img"></div>
@@ -128,6 +144,8 @@
             </div>
         </div>
     </section>
+    <!--    А вам знакомо?-->
+    <!--    Причины-->
     <section class="container reasons">
         <div class="wrap-text">
             <h2>6 причин<br><span>заказать облицовку</span> у нас</h2>
@@ -159,29 +177,51 @@
             </div>
         </div>
     </section>
-
+    <!--    Причины-->
+    <!--    Галерея с примерами работ-->
     <section class="container gallery">
         <h2>Наши <span>работы</span></h2>
-    </section>    
-       
+    </section>
+    <!--    Галерея с примерами работ-->
+    <!--    Комментарии со слайдером-->
     <section class="comments">
         <div class="container">
-        <div class="wrap-text">
-        <h2>Комментарии заказчиков</h2>
-        <div class="ico"></div>
-        <p>Познакомим с нашими клиентами и покажим выполненные объекты. Вы увидите качество нашей работы, проверенное временем</p>
-    </div>
-    <div class="wrap-slider">
-        
-    </div>
-    </div>
+            <div class="wrap-text">
+                <h2>Комментарии заказчиков</h2>
+                <div class="ico"></div>
+                <p>Познакомим с нашими клиентами и покажим выполненные объекты. Вы увидите качество нашей работы, проверенное временем</p>
+            </div>
+            <div class="wrap-slider">
+                <div class="slide">
+                    <p class="name">Сергей</p>
+                    <div class="chat">
+                        <p class="executor">Добрый день! Сергей, буду благодарен за обратную связь по работе бригады.
+                        </p>
+                        <p class="client">Здравствуйте. Работой доволен. Благодаря тому, что кладку сделали очень качественно, шлифовка и пропитка обошлись мне в 4 раза дешевле. Тем более, что на нашу площадь работ это очень значительная сумма.</p>
+                        <p class="executor"> Рад это слышать.</p>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <p class="name">Сергей</p>
+                    <div class="chat">
+                        <p class="executor">Добрый день! Сергей, буду благодарен за обратную связь по работе бригады.
+                        </p>
+                        <p class="client">Здравствуйте. Работой доволен. Благодаря тому, что кладку сделали очень качественно, шлифовка и пропитка обошлись мне в 4 раза дешевле. Тем более, что на нашу площадь работ это очень значительная сумма.</p>
+                        <p class="executor"> Рад это слышать.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    
+    <!--    Комментарии со слайдером-->
+    <!--    Цены-->
     <section class="container prices">
         <h2>Цены</h2>
     </section>
-
+    <!--    Цены-->
+    <!--    Принципы работы-->
     <section class="container principle">
         <h2>Принципы нашей <span>работы</span></h2>
         <div class="wrap-items">
@@ -191,87 +231,89 @@
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4>Стандарты</h4>
-                    <p>Стандарты</p>
-                    <div class="btn-c">Стандарты</div>
+                        <h4>Стандарты</h4>
+                        <p>Стандарты</p>
+                        <div class="btn-c">Стандарты</div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3>Качество</h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3>Эстетика</h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3>Энтузиазм</h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3>Ответственность</h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3></h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
-             <div class="item">
+            </div>
+            <div class="item">
                 <h3></h3>
                 <p></p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
-                    <h4></h4>
-                    <p></p>
-                    <div class="btn-c"></div>
+                        <h4></h4>
+                        <p></p>
+                        <div class="btn-c"></div>
                     </div>
                 </div>
-            </div>     
+            </div>
 
         </div>
     </section>
+    <!--    Принципы работы-->
+    <!--    Алгоритм работы-->
     <section class="algo">
         <h2>Рабочий <span>алгоритм</span></h2>
         <div class="wrap-items">
@@ -313,8 +355,11 @@
                 </p>
             </div>
         </div>
+
     </section>
-    <footer class="container">
+    <!--    Алгоритм работы-->
+    <!--    FOOTER-->
+    <footer>
         <h2>Остались <span>вопросы?</span></h2>
         <p class="desc">Получите подробную <span>консультацию</span> по выбору камня,декоративных элементов и выберите лучшее решение по вашим запросам из тех, которые предложит наш специалист</p>
         <div class="wrap-contact">
