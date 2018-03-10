@@ -192,7 +192,7 @@ header .main-h {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: stretch; 
+    align-items: stretch;
     padding-top: 5em;
     margin-bottom: 5em;
 
@@ -203,7 +203,7 @@ header .main-h {
     font-size: 1em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.52);
     font-family: 'Rubik-Light', sans-serif;
-    
+
 }
 
 .main-menu li {
@@ -1046,6 +1046,8 @@ footer .wrap-contact .item a {
     font-size: 1.2em;
     letter-spacing: 0.025em;
     line-height: 1.7;
+        margin: 0 auto;
+    display: block;
 }
 
 footer .wrap-inp {
@@ -1122,7 +1124,7 @@ footer .f-btn:after {
     }
 
     .main-menu {
-       width: 90%;
+        width: 90%;
     }
     .main-menu li {
         text-align: center;
@@ -1138,50 +1140,117 @@ footer .f-btn:after {
 }
 
 @media (max-width: 992px) {
-   
 
-@media (max-width: 768px) {
-   .main-menu {
-       padding-top: 8.5em;
-       margin: 0 auto;
-       margin-bottom: 2.5em;
-    }
-    .why .causes .item {
-        width: 80%;
-    }
-    .main-row {
-        position: absolute;
-        top: 0;
-        height: auto;
-        padding: 1em 0;
-    }
-    .main-row .container{
+
+    @media (max-width: 768px) {
+        .main-menu {
+            padding-top: 8.5em;
+            margin: 0 auto;
+            width: 410px;
+            margin-bottom: 2.5em;
+        }
+        .why .causes .item {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .main-row {
+            position: absolute;
+            top: 0;
+            height: auto;
+            padding: 1em 0;
+        }
+        .main-row .container {
             display: flex;
-        flex-direction: column;
-    align-items: center;
-    }
-    .main-row .tel{
-        margin-right: 2em;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-row .tel {
+            margin-right: 2em;
+
+        }
+        .main-row .head-contacts {
+            margin-top: 0.5em;
+            margin-left: 3em;
+        }
+        header .main-h {
+            font-size: 2em;
+        }
+
+        header .circles-about .circle,
+        header .circles-about .item:nth-child(2) .circle {
+            height: 6em;
+            width: 6em;
+            margin-top: 0;
+        }
+        header .circles-about .item:nth-child(1) .circle:before,
+        header .circles-about .item:nth-child(2) .circle:before,
+        header .circles-about .item:nth-child(3) .circle:before {
+            width: 3em;
+            height: 3em;
+        }
+        footer .feedback,
+        .know .wrap-text .item {
+            width: 80%
+        }
+       
+        .know .bg-img {
+            width: 70%
+        }
         
+        .know .wrap-text {
+            margin-right: 2.5em;
+            width: 40%;
+            margin-top: 2.5em;
+        }
+        .reasons .wrap-text {
+            width: 100%;
+            margin: 0 auto;
+            padding: 1em;
+
+        }
+        footer .wrap-contact .item .ico,
+        .reasons .wrap-text:after {
+            display: none;
+        }
+        footer .wrap-contact,
+        .reasons .wrap-reasons {
+            flex-direction: column;
+        }
+        .reasons .wrap-reasons .item {
+            width: 70%;
+            margin: 0.5em auto;
+        }
+        .container.reasons,
+        .container.know,
+        footer .desc,
+        footer .inp {
+            width: 100%;
+        }
+        footer textarea {
+            width: auto;
+        }
+      
+        footer .wrap-inp {
+            flex-direction: column;
+            align-items: stretch;
+        }
+         footer .wrap-contact .item,       
+        footer .desc{
+            margin-bottom: 1em;
+        }
+  
+        footer .inp input {
+            margin-bottom: 1em;
+        }
+        footer .f-btn {
+            margin: 2em auto;
+        }
+        footer:after,
+        footer:before{
+            height: 80%;
+            bottom: 0;
+        }
+
+
     }
-    .main-row .head-contacts{
-        margin-top: 0.5em;
-        margin-left: 3em;       
-    }
-    header .main-h{
-        font-size: 2em;
-    }
-    
-    header .circles-about .circle,
-    header .circles-about .item:nth-child(2) .circle{
-        height: 6em;
-        width: 6em;
-        margin-top: 0;
-    }
-    header .circles-about .item:nth-child(1) .circle:before,
-    header .circles-about .item:nth-child(2) .circle:before,
-    header .circles-about .item:nth-child(3) .circle:before{
-        width: 3em;
-        height: 3em;
-    }
-}
