@@ -923,7 +923,7 @@ header .aplication-btn:before {
     margin-left: 0;
 }
 
-.comments .wrap-slider {
+.comments .bg-slider {
     background: url(../img/comments-tel.png) no-repeat center / contain;
     padding: 2.5em 0;
     position: absolute;
@@ -936,17 +936,47 @@ header .aplication-btn:before {
     right: 2em;
 }
 
-.comments .wrap-slider .slide {
-    width: 19em !important;
-    height: 28em;
-
-    margin-top: 7em;
-    margin-left: auto;
-    margin-right: auto;
-    /*    background: grey;*/
+.comments .bg-slider .wrap-slider {
+    padding-top: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.comments .wrap-slider .slide .name {
+.comments .bg-slider .slide {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comments .slider-arrow{
+    width: 45em;
+    height: 14em;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.comments .slider-arrow .prev,
+.comments .slider-arrow .next{
+    height: 100%;
+    width: 12em;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.6s;
+}
+.comments .slider-arrow .prev{
+    background: url(../img/arrow-l.png) no-repeat left / contain;    
+    left: 0;
+}
+.comments .slider-arrow .next{
+    background: url(../img/arrow-r.png) no-repeat right / contain; 
+    right: 0;
+}
+.comments .slider-arrow .prev:hover{transform: translate(-2%);}
+.comments .slider-arrow .next:hover{transform: translate(2%);}
+.comments .bg-slider .slide .name {
     width: 100%;
     text-align: center;
 
@@ -957,8 +987,8 @@ header .aplication-btn:before {
     margin-bottom: 1.5em;
 }
 
-.comments .wrap-slider .slide .name:after,
-.comments .wrap-slider .slide .name:before {
+.comments .bg-slider .slide .name:after,
+.comments .bg-slider .slide .name:before {
     color: #199bff;
     position: absolute;
     font-size: 0.8em;
@@ -966,21 +996,34 @@ header .aplication-btn:before {
     transform: translate(0, -50%);
 }
 
-.comments .wrap-slider .slide .name:before {
+.comments .bg-slider .slide .name:before {
     content: "< Сообщ.";
     left: 0.5em;
 }
 
-.comments .wrap-slider .slide .name:after {
+.comments .bg-slider .slide .name:after {
     content: "Контакт";
     right: 0.5em;
 }
 
-.comments .wrap-slider .slide .chat {
+.comments .bg-slider .slide .chat {
+    max-height: 26em;
     overflow-y: auto;
 }
 
-.comments .wrap-slider .slide .client {
+.comments .bg-slider .slide .chat::-webkit-scrollbar {
+    width: 0;
+}
+
+.comments .bg-slider .slide .chat {
+    -ms-overflow-style: none;
+}
+
+.comments .bg-slider .slide .chat {
+    overflow: -moz-scrollbars-none;
+}
+
+.comments .bg-slider .slide .client {
     line-height: 1.4;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 0.9em;
@@ -988,7 +1031,7 @@ header .aplication-btn:before {
     width: auto;
     max-width: 70%;
     padding: 1em;
-    
+
     display: block;
     background: #199bff;
 
@@ -1004,14 +1047,14 @@ header .aplication-btn:before {
 
 }
 
-.comments .wrap-slider .slide .executor {
+.comments .bg-slider .slide .executor {
     line-height: 1.4;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 0.9em;
     width: auto;
     max-width: 70%;
     padding: 1em;
-    
+
     display: inline-block;
 
     border-radius: 1em;
