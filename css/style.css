@@ -31,7 +31,7 @@ textarea {
 }
 
 section {
-    margin-bottom: 7.5em !important;
+    margin-bottom: 6em !important;
     position: relative;
 }
 
@@ -1134,8 +1134,12 @@ header .aplication-btn:before {
 }
 
 
-
-
+.gallery{
+ height: 52.5em;
+}
+.gallery h2{
+    margin-bottom: 1em;
+}
 .algo {
     background: var(--light-color);
     padding: 2.5em 0;
@@ -1245,7 +1249,7 @@ footer:before {
     background-position: center left;
 
     height: 80%;
-    width: 50%;
+      width: 30%;
     z-index: -1;
     left: 0;
     bottom: -10%;
@@ -1260,7 +1264,7 @@ footer:after {
     background-position: center right;
 
     height: 80%;
-    width: 50%;
+       width: 30%;
     z-index: -1;
     right: 0;
     bottom: -10%;
@@ -1480,7 +1484,12 @@ footer .f-btn:after {
 
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+        .comments .slider-arrow{
+        width: 35em;
+        height: 8em;
+    }
+}
 
 @media (max-width: 768px) {
     .main-menu {
@@ -1621,9 +1630,27 @@ footer .f-btn:after {
     }
     footer:after,
     footer:before {
-        height: 80%;
+        height: 90%;
+        width: 35%;
         bottom: 0;
     }
 
-
+    .comments .bg-slider {
+        position: relative;
+        transform: none;
+        margin: 0 auto;
+        right: auto;
+    }
+    .comments .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .comments .wrap-text{
+        width: 60%;
+    }
+    .comments .slider-arrow{
+        width: 35em;
+        height: 8em;
+    }
 }
