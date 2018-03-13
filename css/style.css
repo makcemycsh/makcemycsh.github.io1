@@ -948,17 +948,18 @@ header .aplication-btn:before {
     margin-left: auto;
     margin-right: auto;
 }
-.comments .slider-arrow{
+
+.comments .slider-arrow {
     width: 45em;
     height: 14em;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .comments .slider-arrow .prev,
-.comments .slider-arrow .next{
+.comments .slider-arrow .next {
     height: 100%;
     width: 12em;
     position: absolute;
@@ -966,16 +967,25 @@ header .aplication-btn:before {
     z-index: 10;
     transition: 0.6s;
 }
-.comments .slider-arrow .prev{
-    background: url(../img/arrow-l.png) no-repeat left / contain;    
+
+.comments .slider-arrow .prev {
+    background: url(../img/arrow-l.png) no-repeat left / contain;
     left: 0;
 }
-.comments .slider-arrow .next{
-    background: url(../img/arrow-r.png) no-repeat right / contain; 
+
+.comments .slider-arrow .next {
+    background: url(../img/arrow-r.png) no-repeat right / contain;
     right: 0;
 }
-.comments .slider-arrow .prev:hover{transform: translate(-2%);}
-.comments .slider-arrow .next:hover{transform: translate(2%);}
+
+.comments .slider-arrow .prev:hover {
+    transform: translate(-2%);
+}
+
+.comments .slider-arrow .next:hover {
+    transform: translate(2%);
+}
+
 .comments .bg-slider .slide .name {
     width: 100%;
     text-align: center;
@@ -1064,16 +1074,43 @@ header .aplication-btn:before {
 
 }
 
+.principle {
+    position: relative;
+}
+
+.principle:after {
+    content: '';
+    position: absolute;
+    background: url('../img/principle.png') no-repeat center / contain;
+    width: 50%;
+    height: 25em;
+    bottom: 0;
+    right: 0;
+}
+
+.principle h2 {
+    text-align: left;
+}
+
 .principle h3 {
     font-family: 'Rubik-Bold', sans-serif;
     letter-spacing: 0.01em;
     color: var(--theme-color);
     text-align: left;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5;
     position: relative;
     margin-bottom: 1em;
+}
+
+.principle h4 {
+    font-family: 'Roboto-Regular', sans-serif;
+    letter-spacing: 0.01em;
+    color: var(--theme-color);
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 .principle h3:after {
@@ -1082,15 +1119,15 @@ header .aplication-btn:before {
     font-family: sans-serif;
     bottom: -0.6em;
     left: 0;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 800;
 
 }
 
 
 .principle p {
-    margin-bottom: 1em;
-    line-height: 1.4;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
     font-family: 'Roboto-Light', sans-serif;
     letter-spacing: 0.03em;
 }
@@ -1112,9 +1149,32 @@ header .aplication-btn:before {
 }
 
 .principle .wrap-items .item {
-    width: 35%;
-    margin-bottom: 2em;
-    padding-right: 7%;
+    width: 42%;
+    margin-bottom: 3em;
+}
+
+.principle .wrap-name {
+    position: relative;
+
+}
+
+.principle .wrap-name .btn-c {
+    font-family: 'Roboto-Light', sans-serif letter-spacing: 0.01em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0.5em 1.75em;
+    border: 3px solid var(--theme-color);
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9em;
+    width: 12em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
 
 .principle .wrap-contact {
@@ -1124,22 +1184,26 @@ header .aplication-btn:before {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    margin-top: 1em;
 }
 
 .principle .wrap-contact .foto {
-    height: 7em;
-    width: 7em;
+    height: 8em;
+    width: 8em;
     border-radius: 4em;
     background: grey;
+    margin-right: 1em;
 }
 
 
-.gallery{
- height: 52.5em;
+.gallery {
+    height: 52.5em;
 }
-.gallery h2{
+
+.gallery h2 {
     margin-bottom: 1em;
 }
+
 .algo {
     background: var(--light-color);
     padding: 2.5em 0;
@@ -1249,7 +1313,7 @@ footer:before {
     background-position: center left;
 
     height: 80%;
-      width: 30%;
+    width: 30%;
     z-index: -1;
     left: 0;
     bottom: -10%;
@@ -1264,7 +1328,7 @@ footer:after {
     background-position: center right;
 
     height: 80%;
-       width: 30%;
+    width: 30%;
     z-index: -1;
     right: 0;
     bottom: -10%;
@@ -1485,7 +1549,7 @@ footer .f-btn:after {
 }
 
 @media (max-width: 992px) {
-        .comments .slider-arrow{
+    .comments .slider-arrow {
         width: 35em;
         height: 8em;
     }
@@ -1556,7 +1620,34 @@ footer .f-btn:after {
     }
     footer .desc,
 
+    .principle .wrap-items .item {
+        width: 90%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .principle .wrap-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .principle .wrap-name {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
+    }
+    .principle:after {
+        display: none;
+    }
+    .principle .wrap-name .btn-c {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        left: auto;
+    }
+    .principle .wrap-contact .foto {
+        margin: 1em 0;
+    }
     .know .wrap-text .item,
     .know .bg-img {
         width: 80%
@@ -1594,6 +1685,7 @@ footer .f-btn:after {
         width: 70%;
         margin: 0.5em auto;
     }
+
     .container,
     footer .wrap-contact,
     .container.reasons,
@@ -1631,7 +1723,7 @@ footer .f-btn:after {
     footer:after,
     footer:before {
         height: 90%;
-        width: 35%;
+        width: 25%;
         bottom: 0;
     }
 
@@ -1640,17 +1732,39 @@ footer .f-btn:after {
         transform: none;
         margin: 0 auto;
         right: auto;
+        width: 95%;
+        max-width: 23.5em;
+
     }
-    .comments .container{
+    .comments .bg-slider:before {
+        content: '';
+        padding-top: 00%;
+    }
+    .comments .container {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     }
-    .comments .wrap-text{
+    .comments .wrap-text {
         width: 60%;
     }
-    .comments .slider-arrow{
-        width: 35em;
-        height: 8em;
+    .comments .slider-arrow {
+        width: 70%;
+        height: 3.5em;
+        bottom: 3.5%;
+        top: auto;
+    }
+    .principle h2 {
+        margin: 0 0.5em;
+    }
+    .algo .wrap-items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .algo .wrap-items .item {
+        width: 30%;
+    }
+    .algo .wrap-items:after {
+        display: none;
     }
 }
