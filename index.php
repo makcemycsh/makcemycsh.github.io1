@@ -6,7 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+
+    </script>
+
 
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -16,10 +20,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    
-      <link rel='stylesheet prefetch' href='css/swiper.min.css'>
 
-      <link rel="stylesheet" href="css/swiper.css">
+    <link rel='stylesheet prefetch' href='css/swiper.min.css'>
+    <link rel="stylesheet" href="css/swiper.css">
 
 
 
@@ -28,27 +31,30 @@
 <body>
 
     <!--   HEAD-->
+    <input type="checkbox" id="free-application" style="display:none;">
+    <input type="checkbox" id="request-call" style="display:none;">
+    <input type="checkbox" id="consultation" style="display:none;">
     <div class="main-row">
         <div class="container">
-            <h2>ДАГЕСТАНСКИЙ КАМЕНЬ</h2>
+            <a href=".main-menu">
+                <h2>ДАГЕСТАНСКИЙ КАМЕНЬ</h2>
+            </a>
             <div class="head-contacts">
                 <a class="tel" href="tel:+79034150677">8 903 415 06 77</a>
-                <label for="request-call">Заказать звонок</label>
-                <a href="" class="mail"></a>
+                <label id="for-call" for="request-call">Заказать звонок</label>
+                <a href=".desc" class="mail"></a>
             </div>
         </div>
     </div>
     <header>
         <div class="container">
-            <input type="checkbox" id="free-application" style="display:none;">
-            <input type="checkbox" id="request-call" style="display:none;">
             <ul class="main-menu">
                 <li><a href="">Главная</a></li>
                 <li><a href="">Покупка камня</a></li>
                 <li><a href="">Услуги облицовки</a></li>
-                <li><a href="">Как мы работаем</a></li>
-                <li><a href="">Наши работы</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href=".principle">Как мы работаем</a></li>
+                <li><a href=".gallery">Наши работы</a></li>
+                <li><a href=".desc">Контакты</a></li>
             </ul>
             <h1 class="main-h">Продажа дагестанского камня<br>и услуги облицовки по всей россии<br>с гарантией 10 лет</h1>
             <label for="free-application" class="aplication-btn">ОСТАВИТЬ ЗАЯВКУ<br>
@@ -118,15 +124,7 @@
         </div>
     </section>
     <!--    Почему стоит выбрать-->
-    <!--    Контактные формы-->
-    <div class="popup-wrap">
-        <div class="popup-content">
-            <div class="closeBtn"></div>
-            <form action="" method="post" id="send-form" class="ajax_form1">
-            </form>
-        </div>
-    </div>
-    <!--    Контактные формы-->
+
     <!--    А вам знакомо?-->
     <section class="container know">
         <h2>А вам это <span>знакомо?</span></h2>
@@ -180,6 +178,7 @@
                     <h3><span>6</span>Обработка камня</h3>
                     <p>Распиливаем материал на объекте, а не в цехах. Это гарантирует точность камнеобработки, ровную кладку без выступов и экономит ваше время.</p>
                 </div>
+                <label for="consultation" class="f-btn">Получить консультацию</label>
             </div>
         </div>
     </section>
@@ -187,104 +186,104 @@
     <!--    Галерея с примерами работ-->
     <section class="container gallery">
         <h2>Наши <span>работы</span></h2>
-<div class="swiper-container main-slider loading">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-1.jpg)">
-        <img src="img/slide-1.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Shaun Matthews</p>
-        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-2.jpg)">
-        <img src="img/slide-2.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Alexis Berry</p>
-        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-3.jpg)">
-        <img src="img/slide-3.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Billie	Pierce</p>
-        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-4.jpg)">
-        <img src="img/slide-4.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Trevor	Copeland</p>
-        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-5.jpg)">
-        <img src="img/slide-5.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Bernadette	Newman</p>
-        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
-      </div>
-    </div>
-  </div>
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev swiper-button-white"></div>
-  <div class="swiper-button-next swiper-button-white"></div>
-</div>
+        <div class="swiper-container main-slider loading">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-1.jpg)">
+                        <img src="img/slide-1.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Shaun Matthews</p>
+                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-2.jpg)">
+                        <img src="img/slide-2.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Alexis Berry</p>
+                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-3.jpg)">
+                        <img src="img/slide-3.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Billie Pierce</p>
+                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-4.jpg)">
+                        <img src="img/slide-4.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Trevor Copeland</p>
+                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-5.jpg)">
+                        <img src="img/slide-5.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Bernadette Newman</p>
+                        <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
 
-<!-- Thumbnail navigation -->
-<div class="swiper-container nav-slider loading">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-1.jpg)">
-        <img src="img/slide-1.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Shaun Matthews</p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-2.jpg)">
-        <img src="img/slide-2.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Alexis Berry</p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-3.jpg)">
-        <img src="img/slide-3.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Billie	Pierce</p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-4.jpg)">
-        <img src="img/slide-4.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Trevor	Copeland</p>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <figure class="slide-bgimg" style="background-image:url(img/slide-5.jpg)">
-        <img src="img/slide-5.jpg" class="entity-img" />
-      </figure>
-      <div class="content">
-        <p class="title">Bernadette	Newman</p>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Thumbnail navigation -->
+        <div class="swiper-container nav-slider loading">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-1.jpg)">
+                        <img src="img/slide-1.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Shaun Matthews</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-2.jpg)">
+                        <img src="img/slide-2.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Alexis Berry</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-3.jpg)">
+                        <img src="img/slide-3.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Billie Pierce</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-4.jpg)">
+                        <img src="img/slide-4.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Trevor Copeland</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <figure class="slide-bgimg" style="background-image:url(img/slide-5.jpg)">
+                        <img src="img/slide-5.jpg" class="entity-img" />
+                    </figure>
+                    <div class="content">
+                        <p class="title">Bernadette Newman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!--    Галерея с примерами работ-->
@@ -355,7 +354,7 @@
     </section>
     <!--    Комментарии со слайдером-->
     <!--    Цены-->
-<!--
+    <!--
     <section class="container prices">
         <h2>Цены</h2>
     </section>
@@ -367,9 +366,10 @@
         <div class="wrap-items">
             <div class="item">
                 <h3>Стандарты</h3>
-                <p>Мы создали собственные стандарты качества и хотим, чтобы каждый проект, выполненный нами,  вне зависимости от бюджета, соответствовал нашим эталонам.
-                          </p><p>
-Опыт работы с разными объектами позволил нам выработать собственные технологии установки камня и узоров, обеспечивающие  надежность крепления камня даже на многоэтажных зданиях.</p>
+                <p>Мы создали собственные стандарты качества и хотим, чтобы каждый проект, выполненный нами, вне зависимости от бюджета, соответствовал нашим эталонам.
+                </p>
+                <p>
+                    Опыт работы с разными объектами позволил нам выработать собственные технологии установки камня и узоров, обеспечивающие надежность крепления камня даже на многоэтажных зданиях.</p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
@@ -381,9 +381,10 @@
             </div>
             <div class="item">
                 <h3>Качество</h3>
-                <p>Выполняя облицовку, мы стремимся сделать работу максимально надежно, чтобы гарантия, которую мы предоставляем на 10 лет никогда не понадобилась. 
-                </p><p>
-Уже на первых этапах работы заказчик получает уверенность в нашей команде и спокойствие за результат.</p>
+                <p>Выполняя облицовку, мы стремимся сделать работу максимально надежно, чтобы гарантия, которую мы предоставляем на 10 лет никогда не понадобилась.
+                </p>
+                <p>
+                    Уже на первых этапах работы заказчик получает уверенность в нашей команде и спокойствие за результат.</p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
@@ -395,10 +396,11 @@
             </div>
             <div class="item">
                 <h3>Эстетика</h3>
-                <p>Нам нравится создавать эстетичные объекты, делать каждое здание предметом гордости хозяина. 
-                 </p><p>
-Мы предлагаем нашим клиентам проверенные решения для преображения своего дома в элитную недвижимость
-</p>
+                <p>Нам нравится создавать эстетичные объекты, делать каждое здание предметом гордости хозяина.
+                </p>
+                <p>
+                    Мы предлагаем нашим клиентам проверенные решения для преображения своего дома в элитную недвижимость
+                </p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
@@ -423,9 +425,10 @@
             <div class="item">
                 <h3>Ответственность</h3>
                 <p>Мы профессионалы. Поэтому соблюдение сроков и договоренностей - один из наших главных принципов.
-                 </p><p>
-Нам важно, чтобы, выбрав нас, клиент чувствовал уверенность в том, что все рабочие процессы проходят своевременно и нет необходимости в дополнительном контроле.
-</p>
+                </p>
+                <p>
+                    Нам важно, чтобы, выбрав нас, клиент чувствовал уверенность в том, что все рабочие процессы проходят своевременно и нет необходимости в дополнительном контроле.
+                </p>
                 <div class="wrap-contact">
                     <div class="foto"></div>
                     <div class="wrap-name">
@@ -435,7 +438,7 @@
                     </div>
                 </div>
             </div>
-           
+
 
         </div>
     </section>
@@ -513,7 +516,128 @@
             <input type="submit" value="Отправить" class="f-btn">
         </form>
     </footer>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
-<script  src="js/Swiper.js"></script>
+
+
+    <!--    Контактные формы-->
+    <div class="popup-wrap call">
+        <div class="popup-content">
+            <h3>Есть вопросы,<br>которые нужно обсудить лично?<br>Мы перезвоним<br>в удобное для Вас время!</h3>
+            <label for="request-call" class="close"></label>
+            <div class="closeBtn"></div>
+            <form action="" method="post" id="send-form" class="ajax_form1">
+                <input type="text" placeholder="Имя" name="name" required maxlength="15">
+                <input type="tel" name="phonenumber" placeholder="Телефон" required maxlength="15">
+                <div class="time">
+                    <label for="timeS" name="time-start">C</label>
+                    <select name="timeB" required="">
+                    <option value="8:00" selected>8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                    <label for="timeF" name="time-finish">По</label>
+                    <select name="timeF" required="">
+                    <option value="8:00" >8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00" selected>21:00</option>
+                </select>
+                </div>
+                <input type="submit" value="Заказать звонок" class="f-btn">
+            </form>
+            <label for="request-call" class="ok"> Спасибо, мы вам перезвоним</label>
+        </div>
+    </div>
+
+
+    <div class="popup-wrap free-application">
+        <div class="popup-content">
+            <h3>Вызов замерщика</h3>
+            <label for="free-application" class="close"></label>
+            <div class="closeBtn"></div>
+            <form action="" method="post" id="send-form" class="ajax_form1">
+                <input type="text" placeholder="Имя" name="name" required maxlength="15">
+                <input type="tel" name="phonenumber" placeholder="Телефон" required maxlength="15">
+                <div class="time">
+                    <label for="timeS" name="time-start">C</label>
+                    <select name="timeB" required="">
+                    <option value="8:00" selected>8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                </select>
+                    <label for="timeF" name="time-finish">По</label>
+                    <select name="timeF" required="">
+                    <option value="8:00" >8:00</option>
+                    <option value="9:00">9:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00" selected>21:00</option>
+                </select>
+                </div>
+                <input type="submit" value="Заказать звонок" class="f-btn">
+            </form>
+            <label for="free-application" class="ok"> Спасибо, мы вам перезвоним</label>
+        </div>
+    </div>
+
+    <div class="popup-wrap consultation">
+        <div class="popup-content">
+            <h3>Получить консультацию</h3>
+            <label for="consultation" class="close"></label>
+            <div class="closeBtn"></div>
+            <form action="" method="post" id="send-form" class="ajax_form1">
+                <input type="text" placeholder="Имя" name="name" required maxlength="15">
+                <input type="tel" name="phonenumber" placeholder="Телефон" required maxlength="15">
+                <input type="email" name="email" placeholder="Email" required maxlength="35">
+                <input type="submit" value="Отпарвить" class="f-btn">
+            </form>
+            <label for="consultation" class="ok"> Спасибо, мы вам перезвоним</label>
+        </div>
+    </div>
+    <!--    Контактные формы-->
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="js/Swiper.js"></script>
 </body>
+
 </html>
