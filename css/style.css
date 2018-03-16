@@ -293,8 +293,8 @@ header .circles-about .item:nth-child(1) .circle:before {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -323,8 +323,8 @@ header .circles-about .item:nth-child(3) .circle:before {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 4em;
-    height: 4em;
+    width: 5em;
+    height: 5em;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -1856,6 +1856,17 @@ footer .f-btn:after {
         margin: 0 auto;
         padding: 1em 0;
 
+
+    }
+
+    .reasons .wrap-reasons {
+        padding-bottom: 5em;
+    }
+    .reasons .wrap-reasons .f-btn {
+        bottom: 2em;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     footer .wrap-contact .item .ico,
     .reasons .wrap-text:after {
@@ -1964,7 +1975,7 @@ footer .f-btn:after {
         display: none;
     }
 
-    #request-call:checked ~ * .popup-content {
-        margin-top: 15em;
+    .popup-content {
+        top: 10em;
     }
 }
