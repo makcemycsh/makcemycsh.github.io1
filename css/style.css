@@ -281,8 +281,8 @@ header .circles-about .circle {
     width: 8em;
     height: 8em;
     border-radius: 5em;
-    -webkit-box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5);
-    box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5);
+/*     -webkit-box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5);
+    box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5); */
     margin-top: 1em;
 }
 
@@ -308,8 +308,8 @@ header .circles-about .item:nth-child(2) .circle:before {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 5em;
-    height: 5em;
+    width: 5.5em;
+    height: 5.5em;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -346,15 +346,31 @@ header .circles-about .item p {
     letter-spacing: 0.03em;
     line-height: 1.4;
 }
-
+header .aplication-btn:before {
+    content:"";
+    position: absolute;
+    height: 40em;
+    width: 60em;
+    background:var(--light-color);
+    z-index:-1;
+    overflow:hidden;
+    transform:rotate(30deg);
+    transition: 0.8s;
+    left:-50em;    
+    top:0;
+}
+header .aplication-btn:hover:before {
+     left:-10em;  
+}
 header .aplication-btn {
     font-family: 'Rubik-Light', sans-serif;
     margin: 5em auto;
     display: block;
-    width: 20em;
-    background: var(--light-color);
+    width: 22em;
+    /* background: var(--light-color); */
+    background: #ffffff05;
     position: relative;
-    color: var(--theme-color);
+    /* color: var(--theme-color); */
     cursor: pointer;
     text-align: center;
     padding: 0.9em 0;
@@ -364,19 +380,23 @@ header .aplication-btn {
     line-height: 1.5;
     -webkit-transition: 0.6s;
     transition: 0.6s;
-
+    BORDER: solid 3px;
+    color: var(--light-color);
+    border-radius: 0.5em;
+    overflow:hidden;
 }
 
 header .aplication-btn:hover {
     -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    color:var(--theme-color);
 }
 
 header .aplication-btn span {
     font-size: 0.8em;
 }
 
-header .aplication-btn:before {
+/* header .aplication-btn:before {
     content: '';
     position: absolute;
     width: 110%;
@@ -392,7 +412,7 @@ header .aplication-btn:before {
     -webkit-transition: 0.6s;
     transition: 0.6s;
 
-}
+} */
 
 
 
@@ -1060,8 +1080,20 @@ header .aplication-btn:before {
     border-radius: 4em;
     background: transparent;
     border: 2px solid #fff;
+    position:relative;
 
 
+}
+.comments .wrap-text .ico:after{
+    content: '';
+    position: absolute;
+    background: url(../img/comment.png) no-repeat center / contain;
+    width: 5.5em;
+    height: 5.5em;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .comments .wrap-text {
@@ -1264,7 +1296,9 @@ header .aplication-btn:before {
 .principle .item:last-child .btn-c {
     border: 2px solid rgb(158, 108, 72);
 }
-
+.principle .item:last-child .btn-c:hover {
+    background: rgb(158, 108, 72);
+}
 .principle h4 {
     font-family: 'Roboto-Regular', sans-serif;
     letter-spacing: 0.01em;
@@ -1424,6 +1458,7 @@ header .aplication-btn:before {
     margin: 0 auto;
     -webkit-transition: 0.6s;
     transition: 0.6s;
+    position: relative;
 }
 
 .algo .item:hover .ico {
@@ -1431,6 +1466,61 @@ header .aplication-btn:before {
     background: var(--theme-color);
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.algo .ico:before {
+    content: "";
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.6s;
+
+    
+}
+.algo .item:nth-child(1) .ico:before {
+background: url(../img/algo00.png) no-repeat center /contain;
+}
+.algo .item:nth-child(2) .ico:before {
+background: url(../img/algo10.png) no-repeat center /contain;
+}
+.algo .item:nth-child(3) .ico:before {
+background: url(../img/algo20.png) no-repeat center /contain;
+}
+.algo .item:nth-child(4) .ico:before {
+background: url(../img/algo30.png) no-repeat center /contain;
+}
+.algo .item:nth-child(5) .ico:before {
+background: url(../img/algo40.png) no-repeat center /contain;
+}
+.algo .item:nth-child(6) .ico:before {
+background: url(../img/algo50.png) no-repeat center /contain;
+}
+.algo .item:nth-child(7) .ico:before {
+background: url(../img/algo60.png) no-repeat center /contain;
+}
+
+.algo .item:nth-child(1):hover .ico:before {
+background: url(../img/algo01.png) no-repeat center /contain;
+}
+.algo .item:nth-child(2):hover .ico:before {
+background: url(../img/algo11.png) no-repeat center /contain;
+}
+.algo .item:nth-child(3):hover .ico:before {
+background: url(../img/algo21.png) no-repeat center /contain;
+}
+.algo .item:nth-child(4):hover .ico:before {
+background: url(../img/algo31.png) no-repeat center /contain;
+}
+.algo .item:nth-child(5):hover .ico:before {
+background: url(../img/algo41.png) no-repeat center /contain;
+}
+.algo .item:nth-child(6):hover .ico:before {
+background: url(../img/algo51.png) no-repeat center /contain;
+}
+.algo .item:nth-child(7):hover .ico:before {
+background: url(../img/algo61.png) no-repeat center /contain;
 }
 
 .algo h3 {
