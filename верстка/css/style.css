@@ -281,7 +281,7 @@ header .circles-about .circle {
     width: 8em;
     height: 8em;
     border-radius: 5em;
-/*     -webkit-box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5);
+    /*     -webkit-box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5);
     box-shadow: 0px 0px 25px 5px rgba(150, 150, 150, 0.5); */
     margin-top: 1em;
 }
@@ -346,22 +346,25 @@ header .circles-about .item p {
     letter-spacing: 0.03em;
     line-height: 1.4;
 }
+
 header .aplication-btn:before {
-    content:"";
+    content: "";
     position: absolute;
     height: 40em;
     width: 60em;
-    background:var(--light-color);
-    z-index:-1;
-    overflow:hidden;
-    transform:rotate(30deg);
+    background: var(--light-color);
+    z-index: -1;
+    overflow: hidden;
+    transform: rotate(30deg);
     transition: 0.8s;
-    left:-50em;    
-    top:0;
+    left: -50em;
+    top: 0;
 }
+
 header .aplication-btn:hover:before {
-     left:-10em;  
+    left: -10em;
 }
+
 header .aplication-btn {
     font-family: 'Rubik-Light', sans-serif;
     margin: 5em auto;
@@ -383,13 +386,13 @@ header .aplication-btn {
     BORDER: solid 3px;
     color: var(--light-color);
     border-radius: 0.5em;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 header .aplication-btn:hover {
     -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
-    color:var(--theme-color);
+    color: var(--theme-color);
 }
 
 header .aplication-btn span {
@@ -413,8 +416,6 @@ header .aplication-btn span {
     transition: 0.6s;
 
 } */
-
-
 
 #request-call:checked ~ .call,
 #consultation:checked ~ .consultation,
@@ -1080,11 +1081,12 @@ header .aplication-btn span {
     border-radius: 4em;
     background: transparent;
     border: 2px solid #fff;
-    position:relative;
+    position: relative;
 
 
 }
-.comments .wrap-text .ico:after{
+
+.comments .wrap-text .ico:after {
     content: '';
     position: absolute;
     background: url(../img/comment.png) no-repeat center / contain;
@@ -1296,9 +1298,11 @@ header .aplication-btn span {
 .principle .item:last-child .btn-c {
     border: 2px solid rgb(158, 108, 72);
 }
+
 .principle .item:last-child .btn-c:hover {
     background: rgb(158, 108, 72);
 }
+
 .principle h4 {
     font-family: 'Roboto-Regular', sans-serif;
     letter-spacing: 0.01em;
@@ -1467,60 +1471,74 @@ header .aplication-btn span {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
+
 .algo .ico:before {
     content: "";
     position: absolute;
     height: 3em;
     width: 3em;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 0.6s;
 
-    
+
 }
+
 .algo .item:nth-child(1) .ico:before {
-background: url(../img/algo00.png) no-repeat center /contain;
+    background: url(../img/algo00.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(2) .ico:before {
-background: url(../img/algo10.png) no-repeat center /contain;
+    background: url(../img/algo10.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(3) .ico:before {
-background: url(../img/algo20.png) no-repeat center /contain;
+    background: url(../img/algo20.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(4) .ico:before {
-background: url(../img/algo30.png) no-repeat center /contain;
+    background: url(../img/algo30.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(5) .ico:before {
-background: url(../img/algo40.png) no-repeat center /contain;
+    background: url(../img/algo40.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(6) .ico:before {
-background: url(../img/algo50.png) no-repeat center /contain;
+    background: url(../img/algo50.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(7) .ico:before {
-background: url(../img/algo60.png) no-repeat center /contain;
+    background: url(../img/algo60.png) no-repeat center /contain;
 }
 
 .algo .item:nth-child(1):hover .ico:before {
-background: url(../img/algo01.png) no-repeat center /contain;
+    background: url(../img/algo01.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(2):hover .ico:before {
-background: url(../img/algo11.png) no-repeat center /contain;
+    background: url(../img/algo11.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(3):hover .ico:before {
-background: url(../img/algo21.png) no-repeat center /contain;
+    background: url(../img/algo21.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(4):hover .ico:before {
-background: url(../img/algo31.png) no-repeat center /contain;
+    background: url(../img/algo31.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(5):hover .ico:before {
-background: url(../img/algo41.png) no-repeat center /contain;
+    background: url(../img/algo41.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(6):hover .ico:before {
-background: url(../img/algo51.png) no-repeat center /contain;
+    background: url(../img/algo51.png) no-repeat center /contain;
 }
+
 .algo .item:nth-child(7):hover .ico:before {
-background: url(../img/algo61.png) no-repeat center /contain;
+    background: url(../img/algo61.png) no-repeat center /contain;
 }
 
 .algo h3 {
@@ -1770,6 +1788,87 @@ footer .f-btn:after {
     left: 50%;
     top: 50%;
 }
+
+.cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5em;
+    position: relative;
+    padding-top: 2em;
+
+}
+
+.cat .desc {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2em;
+    font-family: 'Roboto-Light', sans-serif;
+
+
+}
+
+.cat .item-wrap {
+    width: 28%;
+    position: relative;
+
+    margin-bottom: 4em;
+    border: solid 10px var(--light-color);
+    background-color: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+.cat .item {
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+}
+
+.cat .item img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.cat .item-wrap h3 {
+    font-family: 'Roboto-Light', sans-serif;
+    text-align: center;
+    font-size: 1.25em;
+    width: 100%;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    margin: 0.5em auto;
+
+
+    color: var(--grey-color);
+    background-color: var(--light-color)
+}
+
+.cat .item-wrap .price {
+    font-family: 'Rubik-Regular', sans-serif;
+    color: var(--grey-color);
+    text-align: center;
+ 
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    background-color: #fff;
+    line-height: 1.5;
+    position: relative;
+
+}
+
 
 @media (max-width: 1200px) {
     * {
@@ -2067,5 +2166,13 @@ footer .f-btn:after {
 
     .popup-content {
         top: 10em;
+    }
+    .cat .item-wrap {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2.5em
+    }
+    .cat .item-wrap .item{
+        padding-top: 50%;
     }
 }

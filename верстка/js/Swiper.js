@@ -10,7 +10,7 @@ var mainSliderOptions = {
       autoplay:{
         delay:3000
       },
-      loopAdditionalSlides: 10,
+      loopAdditionalSlides: 20,
       grabCursor: true,
       watchSlidesProgress: true,
       navigation: {
@@ -64,7 +64,7 @@ var mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 // Navigation Slider
 var navSliderOptions = {
       loop: true,
-      loopAdditionalSlides: 10,
+      loopAdditionalSlides: 20,
       speed:1000,
       spaceBetween: 5,
       slidesPerView: 5,

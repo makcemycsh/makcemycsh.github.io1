@@ -12,8 +12,8 @@
     </script>
 
 
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="<? bloginfo("template_directory"); ?>/js/slick.min.js"></script>
+    <script type="text/javascript" src="<? bloginfo("template_directory"); ?>/js/script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="<? bloginfo("template_directory"); ?>/css/style.css">
     <link rel="stylesheet" type="text/css" href="<? bloginfo("template_directory"); ?>/css/fonts.css">
@@ -40,7 +40,7 @@
             <div class="head-contacts">
                 <a class="tel" href="tel:+79034150677">8 903 415 06 77</a>
                 <label id="for-call" for="request-call">Заказать звонок</label>
-                <a href=".desc" class="mail"></a>
+                <a href="#contacts" class="mail"></a>
             </div>
         </div>
     </div>

@@ -126,10 +126,17 @@ function dag_stones_scripts() {
 
 	wp_enqueue_script( 'dag-stones-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'slick.min', get_template_directory_uri() . '/js/slick.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'Swiper', get_template_directory_uri() . '/js/Swiper.js', array(), '1.0.0', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+
+
 add_action( 'wp_enqueue_scripts', 'dag_stones_scripts' );
 
 /**
@@ -165,3 +172,94 @@ remove_filter('comment_text', 'wpautop'); // Отключаем автоформ
 remove_filter('the_content','wptexturize'); // Отключаем автоформатирование в полном посте
 remove_filter('the_excerpt','wptexturize'); // Отключаем автоформатирование в кратком(анонсе) посте
 remove_filter('comment_text', 'wptexturize'); // Отключаем автоформатирование в комментариях
+
+
+// фотогалерея-слайдер
+add_shortcode('gallery', 'my_gallery');
+function my_gallery($atts, $text=''){
+	if ($atts['theme']=='main') {
+
+	
+    $img_src = explode(',', $atts['ids']);
+    $html = '<div class="swiper-container main-slider loading">
+    <div class="swiper-wrapper">';
+    foreach ($img_src as $img) {
+    	   $html .='
+    	          <div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url('. wp_get_attachment_image_url($img, $size = 'full') .')">
+                    <img src="'. wp_get_attachment_image_url($img, $size = 'full').'" class="entity-img"  alt ="'.get_post_meta(  $img, '_wp_attachment_image_alt', true ) .'" title="'.get_the_title($img).'"/>
+                </figure>
+                <div class="content">
+                    <p class="title">'.get_the_title($img).'</p>
+                    <span class="caption">'.wp_get_attachment_caption($img).'</span>
+                </div>
+            </div>';
+
+    }
+     	   $html .='</div><div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div></div>';
+      $html .='<div class="swiper-container nav-slider loading">
+        <div class="swiper-wrapper">';
+    foreach ($img_src as $img) {
+       $html .='<div class="swiper-slide">
+                <figure class="slide-bgimg" style="background-image:url('. wp_get_attachment_image_url($img).')">
+                    <img src="'. wp_get_attachment_image_url($img).'" class="entity-img" />
+                </figure>
+                <div class="content">
+                    <p class="title">'.get_the_title($img).'</p>
+                </div>
+            </div>';
+    }
+   $html .= '</div></div>';
+    return $html;
+    }
+};
+
+
+// Комментарии
+add_shortcode( 'comments', 'comments_func' );
+function comments_func($atts, $text=''){
+
+query_posts('cat=6');
+$html ="";
+while (have_posts()) : the_post();
+$html .= ' <div class="slide">
+                        <p class="name">'.get_field("name").'</p>
+                        <div class="chat">';
+
+	if (get_field("comment_e0") != "" ) { $html .= ' <p class="executor">'.get_field("comment_e0").'</p>';}
+	if (get_field("comment_c0") != "" ) { $html .= ' <p class="client">'.get_field("comment_c0").'</p>';}
+
+	if (get_field("comment_e1") != "" ) { $html .= ' <p class="executor">'.get_field("comment_e1").'</p>';}
+	if (get_field("comment_c1") != "" ) { $html .= ' <p class="client">'.get_field("comment_c1").'</p>';}
+
+	if (get_field("comment_e2") != "" ) { $html .= ' <p class="executor">'.get_field("comment_e2").'</p>';}
+	if (get_field("comment_c2") != "" ) { $html .= ' <p class="client">'.get_field("comment_c2").'</p>';}
+
+$html .= '</div></div>';
+	endwhile;
+ 	wp_reset_query();
+	return $html;
+}
+
+
+// Раздел с товаром
+
+add_shortcode( 'goods', 'goods_func' );
+function goods_func($atts, $text=''){
+
+query_posts('cat=7&order=ASC');
+$html ="";
+while (have_posts()) : the_post();
+	$image = get_field('foto');
+	$html .= '<div class="item-wrap">
+              <div class="item">
+              <img src='.$image['url'].' alt='.$image['alt'].' />              
+                </div>
+                <h3>'.get_the_title().'</h3>
+                <p class="price">'.get_field("price").' <span class="span">руб/кв.м</span></p>                     
+            </div>';
+	endwhile;
+ 	wp_reset_query();
+	return $html;
+}
